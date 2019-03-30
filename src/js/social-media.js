@@ -1,14 +1,14 @@
 const links = [
     {
-        href: '',
+        href: 'https://dribbble.com/',
         icon: `<i class="fab fa-dribbble"></i>`
     },
     {
-        href: '',
+        href: 'https://www.instagram.com/',
         icon: `<i class="fab fa-instagram"></i>`
     },
     {
-        href: '',
+        href: 'https://www.facebook.com/',
         icon: `<i class="fab fa-facebook-f"></i>`
     }
 ];

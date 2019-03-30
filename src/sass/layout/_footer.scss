@@ -1,7 +1,6 @@
 @import "../abstracts/variables";
 
 .footer {
-  //height: 100px;
   padding: 41px 48px;
   display: flex;
   justify-content: space-between;
@@ -15,14 +14,12 @@
 
 @media (max-width: 768px) {
   .footer {
-    //height: 90px;
     padding: 36px 48px;
   }
 }
 
 @media (max-width: 550px) {
   .footer {
-    //height: 80px;
     padding: 31px 30px;
     display: block;
   }
