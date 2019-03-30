@@ -1,34 +1,34 @@
-// const drink1 = require('../images/bijou.jpg');
-// const drink2 = require('../images/negroni.jpg');
-// const drink3 = require('../images/mojito.jpg');
-// const drink4 = require('../images/rattlesnake.jpg');
-// const drink5 = require('../images/eggnogg.jpg');
-// const drink6 = require('../images/zinger.jpg');
+const drink1 = require('../images/bijou.jpg');
+const drink2 = require('../images/negroni.jpg');
+const drink3 = require('../images/mojito.jpg');
+const drink4 = require('../images/rattlesnake.jpg');
+const drink5 = require('../images/eggnogg.jpg');
+const drink6 = require('../images/zinger.jpg');
 
 const drinksData = [
     {
         name: 'Bijou',
-        image: '../images/bijou.jpg'
+        image: drink1
     },
     {
         name: 'Negroni',
-        image: '../images/negroni.jpg'
+        image: drink2
     },
     {
         name: 'Mojito',
-        image: '../images/mojito.jpg'
+        image: drink3
     },
     {
         name: 'Texas Rattlesnake',
-        image: '../images/rattlesnake.jpg'
+        image: drink4
     },
     {
         name: 'Egg Nogg',
-        image: '../images/eggnogg.jpg'
+        image: drink5
     },
     {
         name: 'Zinger',
-        image: '../images/zinger.jpg'
+        image: drink6
     },
 ];
 
