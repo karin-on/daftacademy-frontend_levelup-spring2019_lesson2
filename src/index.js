@@ -6,6 +6,8 @@ import main from './js/main';
 import filters from './js/filters';
 import drinkCards from './js/drink-cards';
 import footer from './js/footer';
+import contact from './js/contact';
+import socialMedia from './js/social-media';
 
 
 container();
@@ -14,3 +16,5 @@ main();
 filters();
 drinkCards();
 footer();
+contact();
+socialMedia();

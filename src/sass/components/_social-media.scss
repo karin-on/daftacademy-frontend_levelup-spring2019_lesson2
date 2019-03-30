@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media__text {
+  margin-right: 10px;
+}
+
+.social-media__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons__link {
+  text-decoration: none;
+  color: $color-icon-link;
+  margin-left: 26px;
+}
+
+
+@media (max-width: 550px) {
+  .footer__social-media {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+  .icons__link {
+    margin-left: 20px;
+  }
+}
