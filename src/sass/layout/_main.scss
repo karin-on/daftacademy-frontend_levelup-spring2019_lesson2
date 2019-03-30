@@ -1,0 +1,31 @@
+@import "../abstracts/variables";
+
+.main {
+  background-color: $main-background;
+  padding: 7% 11% 7% 15%;
+}
+
+
+@media (max-width: 1440px) {
+  .main {
+    padding: 7% 4% 7% 9%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    padding: 7% 48px 7% 48px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    padding: 7% 30px 7% 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    padding: 7% 15px 7% 15px;
+  }
+}

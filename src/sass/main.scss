@@ -1,5 +1,15 @@
-@import "base/reset";
+@import
+  "base/reset",
+  "base/fonts";
 
 @import "abstracts/variables";
 
-@import "body";
+@import
+  "layout/body",
+  "layout/container",
+  "layout/header",
+  "layout/main";
+
+@import
+  "components/filters",
+  "components/drink-cards";
