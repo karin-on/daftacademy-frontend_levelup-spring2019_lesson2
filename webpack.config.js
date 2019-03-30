@@ -2,6 +2,7 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = function (env) {
@@ -37,6 +38,16 @@ module.exports = function (env) {
                         { loader: 'postcss-loader', options: { sourceMap: !isDev } },
                         { loader: 'sass-loader', options: { sourceMap: !isDev } }
                     ]
+                },
+                {
+                    test: /\.(png|jpg|jpeg|gif)$/,
+                    use: {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images',
+                        },
+                    },
                 }
             ]
         },
@@ -48,7 +59,10 @@ module.exports = function (env) {
             }),
             new MiniCssExtractPlugin({
                 filename: '[name].css'
-            })
+            }),
+            new CopyWebpackPlugin([
+                { from: 'src/images', to: 'images' }
+            ])
         ]
     };
 
