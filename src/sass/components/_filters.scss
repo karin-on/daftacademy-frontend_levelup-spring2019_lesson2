@@ -1,21 +1,29 @@
 @import "../abstracts/variables";
 
 .main__filters {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
+  //display: flex;
+  //justify-content: space-between;
+  //margin-bottom: 60px;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .filters__button {
-  font-size: 18px;
   font-family: $font-main;
   font-weight: 300;
   color: $color-filters-button;
   border: none;
   background-color: transparent;
-  padding: 15px 0;
+  //font-size: 18px;
+  //padding: 15px 0;
   cursor: pointer;
   outline: none;
+
+  width: 100%;
+  text-align: center;
+
+  font-size: 14px;
+  padding: 10px 0;
 }
 
 .filters__button:hover {
@@ -25,35 +33,75 @@
 
 
 
-@media (max-width: 1100px) {
-  .filters__button {
-    width: 100%;
-    text-align: center;
-  }
+//@media (max-width: 1100px) {
+//  .filters__button {
+//    width: 100%;
+//    text-align: center;
+//  }
+//
+//  .main__filters {
+//    display: block;
+//    text-align: center;
+//    margin-bottom: 7%;
+//  }
+//}
 
-  .main__filters {
-    display: block;
-    text-align: center;
-    margin-bottom: 7%;
+//@media (max-width: 550px) {
+//  .main__filters {
+//    margin-top: 7%;
+//  }
+//}
+//
+//@media (max-width: 450px) {
+//  .main__filters {
+//    margin-top: 10%;
+//    margin-bottom: 10%;
+//  }
+//}
+//
+//@media (max-width: 400px) {
+//  .filters__button {
+//    font-size: 14px;
+//    padding: 10px 0;
+//  }
+//}
+
+
+@media (min-width: 401px) {
+  .filters__button {
+    font-size: 18px;
+    padding: 15px 0;
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 451px) {
   .main__filters {
     margin-top: 7%;
   }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 551px) {
   .main__filters {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 769px) {
+  .main__filters {
+    margin-bottom: 7%;
+  }
+}
+
+@media (min-width: 1101px) {
   .filters__button {
-    font-size: 14px;
-    padding: 10px 0;
+    width: unset;
+    text-align: left;
+  }
+
+  .main__filters {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 4%;
   }
 }
