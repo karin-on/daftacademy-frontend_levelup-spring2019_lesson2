@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
 
 .header {
   position: relative;
@@ -19,6 +19,8 @@
   border: 2px solid $color-logo;
 }
 
+
+/* Media Queries */
 
 @media (min-width: 401px) {
   .header {

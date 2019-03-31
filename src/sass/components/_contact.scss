@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
 
 .footer__contact {
   margin-bottom: 20px;
@@ -10,6 +10,8 @@
   font-weight: 400;
 }
 
+
+/* Media Queries */
 
 @media (min-width: 451px) {
   .footer__contact {

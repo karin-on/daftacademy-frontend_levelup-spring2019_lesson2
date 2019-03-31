@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
 
 .footer {
   font-family: $font-main;
@@ -9,6 +9,7 @@
 }
 
 
+/* Media Queries */
 
 @media (min-width: 361px) {
   .footer {

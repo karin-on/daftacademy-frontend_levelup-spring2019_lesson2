@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
 
 .main-content {
   background-color: $main-background;
@@ -6,6 +6,7 @@
 }
 
 
+/* Media Queries */
 
 @media (min-width: 361px) {
   .main-content {

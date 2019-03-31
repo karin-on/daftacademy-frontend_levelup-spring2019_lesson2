@@ -1,9 +1,11 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
 
 .container {
   margin: 0 auto;
 }
 
+
+/* Media Queries */
 
 @media (min-width: 1101px) {
   .container {

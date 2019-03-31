@@ -1,4 +1,6 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
+//@import "../abstracts/mixins";
+
 
 .main-content__drink-cards {
   display: flex;
@@ -14,34 +16,40 @@
 }
 
 .card__image-wrapper {
-  position: relative;
-  height: 0;
-  padding-bottom: 100%;
+  @include elastic-media-wrapper(100%);
+
+  //position: relative;
+  //height: 0;
+  //padding-bottom: 100%;
   overflow: hidden;
 }
 
 .card__image {
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include elastic-medium(120%, 120%);
+
+  //position: absolute;
+  //width: 120%;
+  //height: 120%;
+
+  @include center-absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
 }
 
 .card__name {
   position: absolute;
+  @include center-absolute;
   z-index: 1;
   font-family: $font-card-names;
   font-weight: 900;
   letter-spacing: 2.2px;
   color: $color-white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
   text-align: center;
   line-height: 2;
-
   font-size: 9vw;
 }
 
@@ -66,6 +74,7 @@
 }
 
 
+/* Media Queries */
 
 @media (min-width: 451px) {
   .card {

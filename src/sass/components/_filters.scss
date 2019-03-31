@@ -1,4 +1,5 @@
-@import "../abstracts/variables";
+//@import "../abstracts/variables";
+
 
 .main-content__filters {
   display: flex;
@@ -54,6 +55,7 @@
 }
 
 
+/* Media Queries */
 
 @media (min-width: 401px) {
   .filters__button {
