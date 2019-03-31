@@ -1,6 +1,6 @@
 @import "../abstracts/variables";
 
-.main__filters {
+.main-content__filters {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,39 +54,6 @@
 }
 
 
-//@media (max-width: 1100px) {
-//  .filters__button {
-//    width: 100%;
-//    text-align: center;
-//  }
-//
-//  .main__filters {
-//    display: block;
-//    text-align: center;
-//    margin-bottom: 7%;
-//  }
-//}
-
-//@media (max-width: 550px) {
-//  .main__filters {
-//    margin-top: 7%;
-//  }
-//}
-//
-//@media (max-width: 450px) {
-//  .main__filters {
-//    margin-top: 10%;
-//    margin-bottom: 10%;
-//  }
-//}
-//
-//@media (max-width: 400px) {
-//  .filters__button {
-//    font-size: 14px;
-//    padding: 10px 0;
-//  }
-//}
-
 
 @media (min-width: 401px) {
   .filters__button {
@@ -96,19 +63,19 @@
 }
 
 @media (min-width: 451px) {
-  .main__filters {
+  .main-content__filters {
     margin-top: 7%;
   }
 }
 
 @media (min-width: 551px) {
-  .main__filters {
+  .main-content__filters {
     margin-top: 0;
   }
 }
 
 @media (min-width: 769px) {
-  .main__filters {
+  .main-content__filters {
     margin-bottom: 7%;
   }
 }
@@ -119,7 +86,7 @@
     text-align: left;
   }
 
-  .main__filters {
+  .main-content__filters {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 4%;

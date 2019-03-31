@@ -19,9 +19,9 @@ const renderFilterButtons = () => {
 };
 
 export default () => {
-    const main = document.querySelector('.main');
+    const main = document.querySelector('.main-content');
     const filters = document.createElement('div');
-    filters.classList.add('main__filters');
+    filters.classList.add('main-content__filters');
 
     const buttons = renderFilterButtons();
     buttons.forEach(el => {

@@ -61,9 +61,9 @@ const renderDrinkCards = () => {
 
 
 export default () => {
-    const main = document.querySelector('.main');
+    const main = document.querySelector('.main-content');
     const drinkCards = document.createElement('div');
-    drinkCards.classList.add('main__drink-cards');
+    drinkCards.classList.add('main-content__drink-cards');
     const cards = renderDrinkCards();
     cards[1].classList.add('card--selected');
     cards.forEach(el => {

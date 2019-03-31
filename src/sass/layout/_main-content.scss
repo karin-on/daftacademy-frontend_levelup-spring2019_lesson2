@@ -1,0 +1,32 @@
+@import "../abstracts/variables";
+
+.main-content {
+  background-color: $main-background;
+  padding: 7% $padding-inner-xs;
+}
+
+
+
+@media (min-width: 361px) {
+  .main-content {
+    padding: 7% $padding-inner-sm;
+  }
+}
+
+@media (min-width: 551px) {
+  .main-content {
+    padding: 7% $padding-inner-md;
+  }
+}
+
+@media (min-width: 1201px) {
+  .main-content {
+    padding: 7% 4% 7% 9%;
+  }
+}
+
+@media (min-width: 1441px) {
+  .main-content {
+    padding: 7% 11% 7% 15%;
+  }
+}
