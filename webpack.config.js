@@ -40,7 +40,7 @@ module.exports = function (env) {
                     ]
                 },
                 {
-                    test: /\.(png|jpg|jpeg|gif)$/,
+                    test: /\.(png|jpg|jpeg|gif|ico)$/,
                     use: {
                         loader: 'file-loader',
                         options: {
@@ -55,7 +55,8 @@ module.exports = function (env) {
             new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: './index.html'
+                template: './index.html',
+                favicon: './src/images/dinks.ico'
             }),
             new MiniCssExtractPlugin({
                 filename: '[name].css'
