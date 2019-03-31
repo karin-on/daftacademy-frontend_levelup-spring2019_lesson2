@@ -2,17 +2,6 @@ import buttonsTxt from '../data/filters-buttons';
 
 
 const renderFilterButtons = () => {
-    // const buttonsTxt = [
-    //     'Beer',
-    //     'Coffee / Tea',
-    //     'Cocktail',
-    //     'Cocoa',
-    //     'Milk / Float / Shake',
-    //     'Shot',
-    //     'Punch / Party Drink',
-    //     'Homemade Liqueur'
-    // ];
-
     return buttonsTxt.map(el => {
         const button = document.createElement('button');
         button.classList.add('filters__button');
