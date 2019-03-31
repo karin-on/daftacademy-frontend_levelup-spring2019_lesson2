@@ -2,30 +2,55 @@
 
 .main {
   background-color: $main-background;
-  padding: 7% 11% 7% 15%;
+  padding: 7% $padding-inner-xs;
 }
 
+@media (min-width: 361px) {
+  .main {
+    padding: 7% $padding-inner-sm;
+  }
+}
 
-@media (max-width: 1440px) {
+@media (min-width: 551px) {
+  .main {
+    padding: 7% $padding-inner-md;
+  }
+}
+
+@media (min-width: 1201px) {
   .main {
     padding: 7% 4% 7% 9%;
   }
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 1441px) {
   .main {
-    padding: 7% 48px 7% 48px;
+    padding: 7% 11% 7% 15%;
   }
 }
 
-@media (max-width: 550px) {
-  .main {
-    padding: 7% 30px 7% 30px;
-  }
-}
 
-@media (max-width: 400px) {
-  .main {
-    padding: 7% 15px 7% 15px;
-  }
-}
+//@media (max-width: 1440px) {
+//  .main {
+//    padding: 7% 4% 7% 9%;
+//  }
+//}
+//
+//@media (max-width: 1100px) {
+//  .main {
+//    padding: 7% 48px 7% 48px;
+//  }
+//}
+//
+//@media (max-width: 550px) {
+//  .main {
+//    padding: 7% 30px 7% 30px;
+//  }
+//}
+//
+//@media (max-width: 400px) {
+//  .main {
+//    padding: 7% 15px 7% 15px;
+//  }
+//}
+

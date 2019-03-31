@@ -1,13 +1,24 @@
 @import "../abstracts/variables";
 
+.footer__contact {
+  margin-bottom: 30px;
+}
+
 .contact__link {
   text-decoration: none;
   color: $color-text-link;
   font-weight: 400;
 }
 
-@media (max-width: 550px) {
+
+@media (min-width: 451px) {
   .footer__contact {
-    margin-bottom: 8%;
+    margin-bottom: 7%;
+  }
+}
+
+@media (min-width: 769px) {
+  .footer__contact {
+    margin-bottom: 0;
   }
 }

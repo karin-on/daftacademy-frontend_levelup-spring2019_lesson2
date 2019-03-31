@@ -3,7 +3,7 @@
 
 .footer__social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -20,18 +20,28 @@
 .icons__link {
   text-decoration: none;
   color: $color-icon-link;
-  margin-left: 26px;
+  margin-left: 20px;
 }
 
 
-@media (max-width: 550px) {
-  .footer__social-media {
-    justify-content: flex-start;
+
+
+
+//@media (max-width: 768px) {
+//  .footer__social-media {
+//    justify-content: flex-start;
+//  }
+//}
+
+
+@media (min-width: 401px) {
+  .icons__link {
+    margin-left: 26px;
   }
 }
 
-@media (max-width: 400px) {
-  .icons__link {
-    margin-left: 20px;
+@media (min-width: 769px) {
+  .footer__social-media {
+    justify-content: space-between;
   }
 }
