@@ -12,7 +12,7 @@ module.exports = function (env) {
         devtool: isDev ? 'eval-source-map' : false,
         entry: './src/index.js',
         output: {
-            filename: 'out.js',
+            filename: 'app.js',
             path: path.resolve(__dirname, 'docs')
         },
         mode: isDev ? 'development' : 'production',
@@ -40,7 +40,7 @@ module.exports = function (env) {
                     ]
                 },
                 {
-                    test: /\.(png|jpg|jpeg|gif|ico)$/,
+                    test: /\.(png|jpg|jpeg|gif)$/,
                     use: {
                         loader: 'file-loader',
                         options: {
@@ -56,13 +56,13 @@ module.exports = function (env) {
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: './index.html',
-                favicon: './src/images/dinks.ico'
+                favicon: './src/assets/dinks.ico'
             }),
             new MiniCssExtractPlugin({
-                filename: '[name].css'
+                filename: 'style.css'
             }),
             new CopyWebpackPlugin([
-                { from: 'src/images', to: 'images' }
+                { from: 'src/assets/images', to: 'images' }
             ])
         ]
     };

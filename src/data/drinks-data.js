@@ -1,9 +1,9 @@
-const drink1 = require('../images/bijou.jpg');
-const drink2 = require('../images/negroni.jpg');
-const drink3 = require('../images/mojito.jpg');
-const drink4 = require('../images/rattlesnake.jpg');
-const drink5 = require('../images/eggnogg.jpg');
-const drink6 = require('../images/zinger.jpg');
+const drink1 = require('../assets/images/bijou.jpg');
+const drink2 = require('../assets/images/negroni.jpg');
+const drink3 = require('../assets/images/mojito.jpg');
+const drink4 = require('../assets/images/rattlesnake.jpg');
+const drink5 = require('../assets/images/eggnogg.jpg');
+const drink6 = require('../assets/images/zinger.jpg');
 
 export default [
     {
