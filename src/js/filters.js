@@ -27,6 +27,7 @@ export default () => {
     buttons.forEach(el => {
         filters.appendChild(el);
     });
+    buttons[0].classList.add('filters__button--selected');
 
     main.appendChild(filters);
 }
