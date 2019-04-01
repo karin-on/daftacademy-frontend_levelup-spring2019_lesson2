@@ -34,9 +34,9 @@ module.exports = function (env) {
                         !isDev ?
                             MiniCssExtractPlugin.loader :
                             { loader: 'style-loader', options: { sourceMap: true } },
-                        { loader: 'css-loader', options: { sourceMap: !isDev } },
-                        { loader: 'postcss-loader', options: { sourceMap: !isDev } },
-                        { loader: 'sass-loader', options: { sourceMap: !isDev } }
+                        { loader: 'css-loader', options: { sourceMap: isDev } },
+                        { loader: 'postcss-loader', options: { sourceMap: isDev } },
+                        { loader: 'sass-loader', options: { sourceMap: isDev } }
                     ]
                 },
                 {
